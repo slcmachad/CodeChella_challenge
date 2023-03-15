@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- ionicons -->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- title -->
+    <title>A Experiência</title>
+</head>
+<body>
+    <!-- conteudo cabecario -->
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html"><img src="../assets/LogoCodechella.svg" alt="Logo da CodeChella" class="img__logo"></a>
+                <span id="hamburguer"><img src="../assets/menu.png" alt="menu"></span>
+            </div>
+            <ul class="menu">
+                <li class="menu__item"><a href="../paginas/experiencia.html" >A experiência</a></li>
+                <li class="menu__item"><a href="../paginas/setores.html" class="selecionado">Mapa de Setores</a></li>
+                <li class="menu__item"><a href="../paginas/informacoes.html">Informações</a></li>
+                <li class="menu__item"><a href="../paginas/ingressos.html">Ingresso</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteudo Principal -->
+
+    <main class="setores">
+        <section class="banner setores__banner">
+            <h1>Mapa de Setores</h1>
+        </section>
+
+        <section class="setores__descricao">
+            <div class="setores__mapa">
+                <img class="mapa" src="../assets/pictures/Mapa-setores.png" alt="Mapa dos setores">
+            </div>
+            <ul class="legenda">
+                <label for="#">Legenda</label>
+                <li class="setor__tipo azul">Pista Premium</li>
+                <li class="setor__tipo rosa">Pista Comum</li>
+                <li class="setor__tipo verde">Cadeiras Térreo</li>
+                <li class="setor__tipo roxo">Cadeiras superiores</li>
+                <li class="setor__tipo azul_escuro">Rampas</li>
+            </ul>
+        </section>
+        <section class="detalhes__setores">
+            <h2>Mais detalhes sobre os setores:</h2>
+            <div class="setores__locais">
+                <div class="locais pista">
+                    <img src="../assets/pictures/pista.png" alt="Pistas de dança">
+                    <h3>Pista</h3>
+                    <p>Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade.</p>
+                </div>
+                <div class="locais premium">
+                    <img src="../assets/pictures/pista-premium.png" alt="Pistas de dança premium">
+                    <h3>Pista Premium</h3>
+                    <p>Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área.</p>
+                </div>
+                <div class="locais cadeiras">
+                    <img src="../assets/pictures/cadeiras.png" alt="Cadeiras terreas e elevadas">
+                    <h3>Cadeiras</h3>
+                    <p>Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em relação às pistas.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- conteudo rodape -->
+    <footer class="rodape">
+        <div class="logo_rodape">
+            <div class="image_logo_rodape">
+                <a href="../index.html"><img src="../assets/LogoCodechella.svg" alt="Logo da CodeChella" class="img__logo"></a>
+            </div>
+            <ul>
+                <label for="#">Acesse nossas redes</label>
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-tiktok'></i></a></li>
+            </ul>
+        </div>
+        <div class="dev__rodape">
+            <p>Desenvolvido Por Alura</p>
+            <p>Projeto fictício sem fins comerciais.</p>
+            <p>Coded by Me <a href="www.linkedin.com/in/salomão-de-cristo-machado">(Salomão de Cristo Machado)</a>.</p>
+        </div>
+    </footer>
+
+    <!-- arquivos javaScript -->
+
+    <script src="../Js/main.js"></script>
+</body>
+</html>

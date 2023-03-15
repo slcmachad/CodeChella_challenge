@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- ionicons -->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- title -->
+    <title>A Experiência</title>
+</head>
+<body>
+    <!-- conteudo cabecario -->
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html"><img src="../assets/LogoCodechella.svg" alt="Logo da CodeChella" class="img__logo"></a>
+                <span id="hamburguer"><img src="../assets/menu.png" alt="menu"></span>
+            </div>
+            <ul class="menu">
+                <li class="menu__item"><a href="../paginas/experiencia.html" >A experiência</a></li>
+                <li class="menu__item"><a href="../paginas/setores.html" class="selecionado">Mapa de Setores</a></li>
+                <li class="menu__item"><a href="../paginas/informacoes.html">Informações</a></li>
+                <li class="menu__item"><a href="../paginas/ingressos.html">Ingresso</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteudo Principal -->
+
+    <main class="ingressos">
+        <section class="banner ingressos__banner">
+            <h1>Garanta seu Ingresso</h1>
+        </section>
+        <section class="precos">
+            <div class="preco__ingresso">
+                <input type="radio" name="slider" id="tab-1">
+                <input type="radio" name="slider" id="tab-2" checked>
+                <input type="radio" name="slider" id="tab-3">
+                <div class="ingresso__tipo">
+                    <label for="tab-1" class="tab-1">Simples</label>
+                    <label for="tab-2" class="tab-2">Premium</label>
+                    <label for="tab-3" class="tab-3">Grupos</label>
+                    <div class="slider"></div>
+                </div>
+                <div class="ingresso__info">
+                    <div class="ingresso__info__quadro">
+                        <div class="quadro quadro-1">
+                            <div class="preco__valores">
+                                <span>399</span>
+                                <p>Por pessoa</p>
+                            </div>
+                            <ul class="beneficios">
+                                <li><i class="fas fa-check"></i><span>Acesso a pista convencional </span></li>
+                                <li><i class="fas fa-check"></i><span>Entrada e saida nos Dois dias</span></li>
+                                <li><i class="fas fa-check"></i><span>Opção de cadeiras térreas ou elevadas.</span></li>
+                                <li><i class="fas fa-check"></i><span>Acesso aos bares e restaurantes</span></li>
+                            </ul>
+                        </div>
+                    
+                    
+                        <div class="quadro">
+                            <div class="preco__valores">
+                                <span>499</span>
+                                <p>Por pessoa</p>
+                            </div>
+                            <ul class="beneficios">
+                                <li><i class="fas fa-check"></i><span><strong>Fotos Com os artistas</strong></span></li>
+                                <li><i class="fas fa-check"></i><span>Acesso a pista Premium </span></li>
+                                <li><i class="fas fa-check"></i><span>Entrada e saida nos Dois dias com acesso antecipado(1h antes)</span></li>
+                                <li><i class="fas fa-check"></i><span>Pista proxima ao palco</span></li>
+                                <li><i class="fas fa-check"></i><span>Acesso muito proximo aos bares e restaurantes</span></li>
+                            </ul>
+                        </div>
+                   
+                        <div class="quadro">
+                            <div class="preco__valores">
+                                <span>349</span>
+                                <p>Por pessoa (para mais de 5 pessoas)</p>
+                            </div>
+                            <ul class="beneficios">
+                                <li><i class="fas fa-check"></i><span>Acesso a pista convencional </span></li>
+                                <li><i class="fas fa-check"></i><span>Entrada e saida nos Dois dias</span></li>
+                                <li><i class="fas fa-check"></i><span>Opção de cadeiras térreas ou elevadas.</span></li>
+                                <li><i class="fas fa-check"></i><span>Acesso aos bares e restaurantes</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="submit" class="fomulario__cadastro">
+                <h2>Preencha o formulário a seguir:</h2>
+                <label for="nome" class="formulario__nome" id="label__nome">Nome Completo:</label>
+                <input type="text" id="nome" class="formulario__nome" required>
+                <label for="email" class="formulario__email" id="label__email">Email:</label>
+                <input type="email" id="email" class="formulario__email" required>
+                <label for="tipo-ingresso" class="formulario__ingresso">Tipo de ingresso</label>
+                <select class="selecao__ingresso" id="tipo-ingressos">
+                    <option id="tipo-ingresso" class="formulario__ingresso__tipo" name="tipo" selected value="Simples">Simples</option>
+                    <option id="tipo-ingresso" class="formulario__ingresso__tipo" name="tipo" value="Premium">Premium</option>
+                    <option id="tipo-ingresso" class="formulario__ingresso__tipo" name="tipo" value="grupo">grupo</option>
+                </select>
+                <label for="numero-pessoas" class="numero__pessoas" id="label__quantidade">Quantidade</label>
+                <input type="number" name="quantidade" id="numero-pessoas" class="numero__de__ingressos" required>
+                <h3 class="erro__numero">Quantidade para grupo deve ser maior que 5</h3>
+                <button class="btn__submit" type="submit" id="submit__btn">Avançar<i class='bx bx-right-arrow-alt'></i></button>
+            </form>
+        </section>
+    </main>
+    <!-- conteudo rodape -->
+    <footer class="rodape">
+        <div class="logo_rodape">
+            <div class="image_logo_rodape">
+                <a href="../index.html"><img src="../assets/LogoCodechella.svg" alt="Logo da CodeChella" class="img__logo"></a>
+            </div>
+            <ul>
+                <label for="#">Acesse nossas redes</label>
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-tiktok'></i></a></li>
+            </ul>
+        </div>
+        <div class="dev__rodape">
+            <p>Desenvolvido Por Alura</p>
+            <p>Projeto fictício sem fins comerciais.</p>
+            <p>Coded by Me <a href="www.linkedin.com/in/salomão-de-cristo-machado">(Salomão de Cristo Machado)</a>.</p>
+        </div>
+    </footer>
+
+    <!-- arquivos javaScript -->
+
+    <script src="../Js/main.js"></script>
+</body>
+</html>
