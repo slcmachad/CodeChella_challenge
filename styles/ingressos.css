@@ -1,0 +1,354 @@
+/* ingressos */
+
+.precos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+
+    font-family: var(--font-principal);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 1.5rem 0;
+}
+
+.preco__ingresso {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.preco__ingresso .ingresso__tipo {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid #fff;
+    position: relative;
+}
+
+.ingresso__tipo label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    cursor: pointer;
+    position: relative;
+    
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.ingresso__tipo label:nth-child(2) {
+    width: 40%;
+}
+
+#tab-1:checked ~ .ingresso__tipo .tab-1,
+#tab-2:checked ~ .ingresso__tipo .tab-2,
+#tab-3:checked ~ .ingresso__tipo .tab-3{
+    color: #fff;
+}
+
+.ingresso__tipo .slider {
+    position: absolute;
+    height: 85%;
+    border-radius: inherit;
+    background: var(--header-bg);
+    transition: all 0.3s ease;
+}
+
+#tab-1:checked ~ .ingresso__tipo .slider {
+    left: 0%;
+    width: 100px;
+    transform: translateX(5%); 
+}
+
+#tab-2:checked ~ .ingresso__tipo .slider {
+    left: 50%;
+    width: 110px;
+    transform: translateX(-50%); 
+}
+
+#tab-3:checked ~ .ingresso__tipo .slider {
+    left: 100%;
+    width: 100px;
+    transform: translateX(-105%);
+}
+
+.preco__ingresso input[type=radio] {
+    display: none;
+}
+
+.ingresso__info {
+    overflow: hidden;
+    height: 320px;
+}
+
+.ingresso__info .ingresso__info__quadro {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.ingresso__info__quadro .quadro{
+    width: 33.4%;
+}
+
+.ingresso__info__quadro .quadro-1 {
+    transition: all 0.3s ease;
+}
+
+#tab-1:checked ~ .ingresso__info .ingresso__info__quadro .quadro-1 {
+    margin-left: 0%;
+}
+
+#tab-2:checked ~ .ingresso__info .ingresso__info__quadro .quadro-1 {
+    margin-left: -33.4%;
+}
+
+#tab-3:checked ~ .ingresso__info .ingresso__info__quadro .quadro-1{
+    margin-left: -66.8%;
+}
+
+.preco__valores {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.preco__valores span {
+    position: relative;
+    font-size: 38px;
+}
+
+.preco__valores span::before {
+    content: "R$";
+    font-size: 14px;
+    position: absolute;
+    left: -30%;
+    top: 25%;
+}
+
+.preco__valores span::after {
+    content: ",00";
+    font-size: 18px;
+    position: absolute;
+    right: -40%;
+    bottom: 0;
+}
+
+.preco__valores p {
+    font-size: 16px;
+    padding: 0.8rem 0;
+}
+
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+
+.fomulario__cadastro {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.fomulario__cadastro h2 {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 1rem 0;
+}
+
+.fomulario__cadastro input {
+    padding: 0.3rem 0.6rem;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    color: #000;
+    outline: none;
+}
+
+.selecao__ingresso, .selecao__cadeiras {
+    padding: 0.3rem;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+.selecao__ingresso .formulario__ingresso__tipo, .selecao__cadeiras .selecao__tipo__cadeira {
+    color: #000;
+}
+
+.formulario__ingresso__tipo::-moz-focus-inner {
+    background-color: #000;
+}
+
+.erro__numero {
+    display: none;
+    font-size: 14px;
+    padding: 0 1rem;
+    color: red;
+    position: relative;
+    top: -34px;
+    right: -10%;
+}
+
+
+.btn__submit {
+    font-family: var(--font-principal);
+    font-size: 18px;
+    background: var(--header-bg);
+    width: 35%;
+    margin: auto;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.btn__submit:hover {
+    scale: 1.1;
+}
+
+
+
+/* ingressos finalizados */
+
+.ingresso__finalizado {
+    font-family: var(--font-principal);
+    font-size: 20px;
+    font-weight: 500;
+    width: 65%;
+    max-width: 780px;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.ingresso__finalizado h2 {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+}
+
+.ingresso__finalizado__code {
+    width: 100%;
+    background: var(--body-bg);
+    padding: 1.3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.logo__ingresso__topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__ingresso__topo img {
+    max-width: 160px;
+}
+
+.ingresso__qrcode {
+    display: flex;
+    width: 100%;
+    height: 160px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.qr__code {
+    width: 160px;
+}
+
+.qr__code img {
+    width: 100%;
+    height: 100%;
+}
+
+.informacao__comprador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 0.3rem;
+}
+
+.informacao__comprador  label {
+    padding: 0 0 0.5rem;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+
+@media screen and (max-width: 968px) {
+    .precos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ingresso__finalizado {
+        width: 75%;
+    }
+
+}
+
+
+@media screen and (max-width: 840px) {
+    .ingresso__finalizado {
+        width: 90%;
+        text-align: center;
+    }
+    
+    .ingresso__qrcode {
+        height: 100%;
+        flex-direction: column;
+    }
+    
+    .informacao__comprador {
+        row-gap: 1rem;
+    }
+    
+    .qr__code {
+        width: 280px;
+    }
+    
+    .fomulario__cadastro {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .precos {
+        font-size: 18px;
+        padding: 1.5rem 0.3rem;
+    }
+
+    .preco__ingresso {
+        padding: 1rem 0.5rem;
+    }
+
+    .ingresso__finalizado__code {
+        border: 1px solid #fff;
+    }
+
+    .qr__code {
+        width: 190px;
+        border: 1px solid #fff;
+    }
+}

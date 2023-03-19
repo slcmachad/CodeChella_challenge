@@ -1,0 +1,171 @@
+/* pagina setores conteudo */
+
+
+.setores__descricao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+.setores__mapa {
+    width: 100%;
+    max-width: 690px;
+    padding: 1rem;
+}
+
+.mapa {
+    width: 100%;
+}
+
+.legenda {
+    width: 50%;
+    font-family: var(--font-principal);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+
+.legenda label {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.setor__tipo {
+    padding: 0.2rem 2.5rem;
+    position: relative;
+}
+
+.setor__tipo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 25px;
+    border: 1px solid #fff;
+}
+
+.azul::before {
+    background: #0E7DF1;
+}
+
+.rosa::before {
+    background: #FE016E;
+}
+
+.verde::before {
+    background: #01A89E;
+}
+
+.roxo::before {
+    background: #3F51B5;
+}
+
+.azul_escuro::before {
+    background: #0E7DF1;
+    background-image: url(../assets/pictures/accessibility-icon.svg);
+    background-position: center;
+    background-size: 24px 24px;
+}
+
+.detalhes__setores h2 {
+    text-align: center;
+    font-family: var(--font-principal);
+    font-size: 40px;
+    font-weight: 700;
+    margin: 3rem auto;
+}
+
+.setores__locais {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0 2rem;
+}
+
+.locais {
+    width: 383px;
+    height: 620px;
+    font-family: var(--font-principal);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.locais img {
+    width: 100%;
+    max-width: 380px;
+}
+
+.locais h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 2.4;
+}
+
+.premium {
+    transform: translateY(17%);
+}
+
+
+
+@media screen and (max-width: 968px) {
+
+    .legenda {
+        width: auto;
+    }
+   
+    .setores__descricao {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem 0;
+    }
+     
+}
+
+@media screen and (max-width: 840px) {
+
+    .setores__locais {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .locais {
+        width: 90%;
+        height: auto;
+    }
+    
+    .premium {
+        transform: translateY(0);
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+
+}
+
+@media screen and (max-width: 580px) {
+
+
+
+    .setores__banner {
+        background-image: url(../assets/pictures/setores-banner-580px.png);
+    }
+
+    .setores__locais {
+        padding: 0;
+    }
+
+    .detalhes__setores h2 {
+        font-size: 32px;
+        margin: 2rem 1rem;
+    }
+
+}

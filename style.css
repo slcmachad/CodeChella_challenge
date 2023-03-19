@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
 /* main css */
 
 :root {
@@ -139,6 +138,10 @@ footer {
     background-image: url(./assets/pictures/ingressos-banner.png);
 }
 
+.ingressos__final__banner {
+    background-image: url(./assets/pictures/ingresso-completo-banner.jpg);
+}
+
 .banner {
     font-family: var(--font-secundaria);
     font-size: 64px;
@@ -158,7 +161,7 @@ footer {
 }
 
 
-/* Informações */
+/* Informações primeira pagina*/
 
 .informacao {
     display: flex;
@@ -372,494 +375,6 @@ footer {
 
 }
 
-/* Pagina A EXPERIENCIA */
-
-.experiencia {
-    display: flex;
-    flex-direction: column;
-    padding: 0 5rem;
-    gap: 1rem;
-}
-
-.experiencia__cards {
-    width: 100%;
-    height: 509px;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
-}
-
-.experiencia__cards__img {
-    height: 380px;
-    border-radius: 1rem;
-    flex: 1.05;
-}
-
-.img1 {
-    background-image: url(./assets/pictures/experiencia01.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.img2 {
-    background-image: url(./assets/pictures/sustentabilidade01.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    order: 2;
-}
-
-.img3 {
-    background-image: url(./assets/pictures/atracoes01.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.experiencia__cards__info {
-    flex: 0.95;
-    font-family: var(--font-principal);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.8;
-}
-
-.experiencia__cards__info h2 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 1.2rem;
-}
-
-
-
-/* pagina setores conteudo */
-
-
-.setores__descricao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    margin: auto;
-}
-
-.setores__mapa {
-    width: 100%;
-    max-width: 690px;
-    padding: 1rem;
-}
-
-.mapa {
-    width: 100%;
-}
-
-.legenda {
-    width: 50%;
-    font-family: var(--font-principal);
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 1.7rem;
-}
-
-.legenda label {
-    font-size: 32px;
-    font-weight: 700;
-}
-
-.setor__tipo {
-    padding: 0.2rem 2.5rem;
-    position: relative;
-}
-
-.setor__tipo::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 25px;
-    border: 1px solid #fff;
-}
-
-.azul::before {
-    background: #0E7DF1;
-}
-
-.rosa::before {
-    background: #FE016E;
-}
-
-.verde::before {
-    background: #01A89E;
-}
-
-.roxo::before {
-    background: #3F51B5;
-}
-
-.azul_escuro::before {
-    background: #0E7DF1;
-    background-image: url(./assets/pictures/accessibility-icon.svg);
-    background-position: center;
-    background-size: 24px 24px;
-}
-
-.detalhes__setores h2 {
-    text-align: center;
-    font-family: var(--font-principal);
-    font-size: 40px;
-    font-weight: 700;
-    margin: 3rem auto;
-}
-
-.setores__locais {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 0 2rem;
-}
-
-.locais {
-    width: 383px;
-    height: 620px;
-    font-family: var(--font-principal);
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-    line-height: 1.5;
-}
-
-.locais img {
-    width: 100%;
-    max-width: 380px;
-}
-
-.locais h3 {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 2.4;
-}
-
-.premium {
-    transform: translateY(17%);
-}
-
-
-
-/* INFORMAÇOES E PERGUNTAS FREQUENTES */
-
-
-.informacoes__perguntas {
-    width: 100%;
-    padding: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.informacoes__perguntas h2 {
-    font-family: var(--font-secundaria);
-    font-size: 48px;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-.conteudo__perguntas {
-    width: 76%;
-    margin: auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-
-    font-family: var(--font-principal);
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.pergunta {
-    padding: 1rem;
-    width: 100%;
-    font-size: 32px;
-    font-weight: 700;
-    background: var(--header-bg);
-    position: relative;
-}
-
-.pergunta::after {
-    content: "";
-    position: absolute;
-    top: 25%;
-    right: 15px;
-    width: 32px;
-    height: 32px;
-    background: url(./assets/pictures/arrow-down.svg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.conteudo__perguntas.aberto .pergunta::after {
-    background: url(./assets/pictures/arrow-up.svg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.resposta {
-    width: 100%;
-    display: none;
-    line-height: 1.4;
-    padding: 1.4rem 1rem;
-    background: var(--azul-claro);
-}
-
-.conteudo__perguntas.aberto .resposta {
-    display: block;
-}
-
-.resposta p, .resposta p a, .resposta p strong {
-    color: var(--cinza-letras);
-}
-
-.resposta p a {
-    text-decoration: underline;
-}
-.resposta p strong {
-    font-weight: 700;
-}
-
-
-/* ingressos */
-
-.precos {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-
-    font-family: var(--font-principal);
-    font-size: 20px;
-    font-weight: 500;
-    padding: 1.5rem 0;
-}
-
-.preco__ingresso {
-    max-width: 400px;
-    width: 100%;
-    padding: 2rem;
-    border-radius: 1rem;
-    background-color: transparent;
-    border: 1px solid #fff;
-}
-
-.preco__ingresso .ingresso__tipo {
-    display: flex;
-    align-items: center;
-    padding: 1.2rem 0.5rem;
-    border-radius: 1rem;
-    border: 1px solid #fff;
-    position: relative;
-}
-
-.ingresso__tipo label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 30%;
-    cursor: pointer;
-    position: relative;
-    
-    transition: all 0.3s ease;
-    z-index: 2;
-}
-
-.ingresso__tipo label:nth-child(2) {
-    width: 40%;
-}
-
-#tab-1:checked ~ .ingresso__tipo .tab-1,
-#tab-2:checked ~ .ingresso__tipo .tab-2,
-#tab-3:checked ~ .ingresso__tipo .tab-3{
-    color: #fff;
-}
-
-.ingresso__tipo .slider {
-    position: absolute;
-    height: 85%;
-    border-radius: inherit;
-    background: var(--header-bg);
-    transition: all 0.3s ease;
-}
-
-#tab-1:checked ~ .ingresso__tipo .slider {
-    left: 0%;
-    width: 100px;
-    transform: translateX(5%); 
-}
-
-#tab-2:checked ~ .ingresso__tipo .slider {
-    left: 50%;
-    width: 110px;
-    transform: translateX(-50%); 
-}
-
-#tab-3:checked ~ .ingresso__tipo .slider {
-    left: 100%;
-    width: 100px;
-    transform: translateX(-105%);
-}
-
-.preco__ingresso input[type=radio] {
-    display: none;
-}
-
-.ingresso__info {
-    overflow: hidden;
-    height: 320px;
-}
-
-.ingresso__info .ingresso__info__quadro {
-    width: 300%;
-    height: 100%;
-    display: flex;
-}
-
-.ingresso__info__quadro .quadro{
-    width: 33.4%;
-}
-
-.ingresso__info__quadro .quadro-1 {
-    transition: all 0.3s ease;
-}
-
-#tab-1:checked ~ .ingresso__info .ingresso__info__quadro .quadro-1 {
-    margin-left: 0%;
-}
-
-#tab-2:checked ~ .ingresso__info .ingresso__info__quadro .quadro-1 {
-    margin-left: -33.4%;
-}
-
-#tab-3:checked ~ .ingresso__info .ingresso__info__quadro .quadro-1{
-    margin-left: -66.8%;
-}
-
-.preco__valores {
-    text-align: center;
-    padding: 1rem 0;
-}
-
-.preco__valores span {
-    position: relative;
-    font-size: 38px;
-}
-
-.preco__valores span::before {
-    content: "R$";
-    font-size: 14px;
-    position: absolute;
-    left: -30%;
-    top: 25%;
-}
-
-.preco__valores span::after {
-    content: ",00";
-    font-size: 18px;
-    position: absolute;
-    right: -40%;
-    bottom: 0;
-}
-
-.preco__valores p {
-    font-size: 16px;
-    padding: 0.8rem 0;
-}
-
-.beneficios {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-}
-
-
-.fomulario__cadastro {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    width: 100%;
-    padding: 2rem 1rem;
-    gap: 0.5rem;
-}
-
-.fomulario__cadastro h2 {
-    font-weight: 700;
-    font-size: 24px;
-    margin: 1rem 0;
-}
-
-.fomulario__cadastro input {
-    padding: 0.3rem 0.6rem;
-    font-size: 20px;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    color: #000;
-    outline: none;
-}
-
-.selecao__ingresso {
-    padding: 0.3rem;
-    font-size: 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: #fff;
-    color: #000;
-}
-.selecao__ingresso .formulario__ingresso__tipo {
-    color: #000;
-}
-
-.erro__numero {
-    display: none;
-    font-size: 13px;
-    padding: 0 1rem;
-    color: red;
-    position: relative;
-    top: -34px;
-    right: -15%;
-}
-
-
-.btn__submit {
-    font-family: var(--font-principal);
-    font-size: 18px;
-    background: var(--header-bg);
-    width: 35%;
-    margin: auto;
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    margin: 1rem auto;
-}
-
-.btn__submit:hover {
-    scale: 1.1;
-}
-
-
-
-
-
-
-
 /* telas menores que 1144px */
 
 @media screen and (max-width: 1144px) {
@@ -874,8 +389,6 @@ footer {
     }
 
 }
-
-
 
 
 /* telas menores que 968px */
@@ -942,50 +455,8 @@ footer {
         gap: 0;
     }
     
-    .experiencia__cards {
-        flex-direction: column;
-        height: 770px;
-    }
-    .experiencia__cards__img {
-        width: 100%;
-        height: 100%;
-    }
-    .experiencia__cards__info {
-        text-align: center;
-        order: 2;
-    }
-    
-    .experiencia .sustentabilidade {
-        height: 640px;
-    }
 
-    .experiencia .atracoes {
-        height: 650px;
-    }
-
-    .setores__descricao {
-        flex-direction: column;
-        width: 100%;
-        padding: 1rem 0;
-    }
-
-    .legenda {
-        margin: auto;
-        width: auto;
-    }
-
-    .pergunta {
-        font-size: 28px;
-        padding-right: 2.5rem;
-    }
-
-    .precos {
-        flex-direction: column;
-        align-items: center;
-    }
-    
 }
-
 
 
 
@@ -1016,26 +487,7 @@ footer {
     .dev__rodape {
         font-size: 16px;
     }
-    
-    .experiencia__banner {
-        background-image: url(./assets/pictures/Banner-experiencia-780px.png);
-    }
 
-    .setores__locais {
-        flex-direction: column;
-        align-items: center;
-        gap: 2.5rem;
-        margin-bottom: 2rem;
-    }
-
-    .locais {
-        width: 90%;
-        height: auto;
-    }
-    
-    .premium {
-        transform: translateY(0);
-    }
 }
 
 
@@ -1049,7 +501,6 @@ footer {
     }
 
 }
-
 
 
 
@@ -1096,7 +547,7 @@ footer {
     
     .menu.active .menu__item {
         position: relative;
-        padding-bottom: 1rem ;
+        padding: 0.5rem 0;
     }
     
     .menu.active .menu__item:not(:last-child) a::after{
@@ -1156,78 +607,6 @@ footer {
         background-position: center;
         background-size: 100% 100%;
     }
-    
-    .experiencia {
-        padding: 2rem;
-    }
-
-    .experiencia__banner {
-        background-image: url(./assets/pictures/Banner-experiencia-370px.png);
-    }
-
-    .experiencia__cards {
-        height: 1070px;
-    }
-
-    .img1 {
-        background-image: url(./assets/pictures/experiencia02.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;        
-    }
-    
-    .img2 {
-        background-image: url(./assets/pictures/sustentabilidade02.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .img3 {
-        background-image: url(./assets/pictures/atracoes02.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .experiencia .sustentabilidade {
-        height: 770px;
-    }
-
-    .experiencia .atracoes {
-        height: 910px;
-    }
-
-    .setores__banner {
-        background-image: url(./assets/pictures/setores-banner-580px.png);
-    }
-
-    .setores__locais {
-        padding: 0;
-    }
-
-    .detalhes__setores h2 {
-        font-size: 32px;
-        margin: 2rem 1rem;
-    }
-
-    .informacoes__perguntas h2 {
-        font-size: 40px;
-    }
-
-    .conteudo__perguntas {
-        width: 90%;
-    }
-
-    .precos {
-        font-size: 18px;
-    }
-
-    .preco__ingresso {
-        padding: 1rem 0.5rem;
-    }
-
-
 }
 
 

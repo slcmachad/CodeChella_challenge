@@ -1,0 +1,141 @@
+/* Pagina A EXPERIENCIA */
+
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+    gap: 1rem;
+}
+
+.experiencia__cards {
+    width: 100%;
+    height: 509px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.experiencia__cards__img {
+    height: 380px;
+    border-radius: 1rem;
+    flex: 1.05;
+}
+
+.img1 {
+    background-image: url(../assets/pictures/experiencia01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img2 {
+    background-image: url(../assets/pictures/sustentabilidade01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    order: 2;
+}
+
+.img3 {
+    background-image: url(../assets/pictures/atracoes01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.experiencia__cards__info {
+    flex: 0.92;
+    font-family: var(--font-principal);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.experiencia__cards__info h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+
+@media screen and (max-width: 968px) {
+    .experiencia__cards {
+        flex-direction: column;
+        height: 770px;
+    }
+    .experiencia__cards__img {
+        width: 100%;
+        height: 100%;
+    }
+    .experiencia__cards__info {
+        text-align: center;
+        order: 2;
+    }
+
+    .experiencia .sustentabilidade {
+        height: 640px;
+    }
+
+    .experiencia .atracoes {
+        height: 650px;
+    }
+}
+
+
+@media screen and (max-width: 840px) {   
+    .experiencia__banner {
+        background-image: url(../assets/pictures/Banner-experiencia-780px.png);
+    }
+}
+
+
+@media screen and (max-width: 690px) {
+
+}
+
+
+
+@media screen and (max-width: 580px) {
+    .experiencia {
+        padding: 2rem;
+    }
+
+    .experiencia__banner {
+        background-image: url(../assets/pictures/Banner-experiencia-370px.png);
+    }
+
+    .experiencia__cards {
+        height: 1070px;
+    }
+
+    .img1 {
+        background-image: url(../assets/pictures/experiencia02.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;        
+    }
+
+    .img2 {
+        background-image: url(../assets/pictures/sustentabilidade02.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .img3 {
+        background-image: url(../assets/pictures/atracoes02.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .experiencia .sustentabilidade {
+        height: 770px;
+    }
+
+    .experiencia .atracoes {
+        height: 910px;
+    }
+}

@@ -7,6 +7,8 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/ingressos.css">
+    <link rel="stylesheet" href="../styles/informacoes.css">
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -28,9 +30,9 @@
             </div>
             <ul class="menu">
                 <li class="menu__item"><a href="../paginas/experiencia.html" >A experiência</a></li>
-                <li class="menu__item"><a href="../paginas/setores.html" class="selecionado">Mapa de Setores</a></li>
+                <li class="menu__item"><a href="../paginas/setores.html">Mapa de Setores</a></li>
                 <li class="menu__item"><a href="../paginas/informacoes.html">Informações</a></li>
-                <li class="menu__item"><a href="../paginas/ingressos.html">Ingresso</a></li>
+                <li class="menu__item"><a href="../paginas/ingressos.html" class="selecionado">Ingresso</a></li>
             </ul>
         </nav>
     </header>
@@ -105,14 +107,19 @@
                 <input type="email" id="email" class="formulario__email" required>
                 <label for="tipo-ingresso" class="formulario__ingresso">Tipo de ingresso</label>
                 <select class="selecao__ingresso" id="tipo-ingressos">
-                    <option id="tipo-ingresso" class="formulario__ingresso__tipo" name="tipo" selected value="Simples">Simples</option>
-                    <option id="tipo-ingresso" class="formulario__ingresso__tipo" name="tipo" value="Premium">Premium</option>
+                    <option id="tipo-ingresso" class="formulario__ingresso__tipo" name="tipo" value="Simples">Simples</option>
+                    <option id="tipo-ingresso" class="formulario__ingresso__tipo" name="tipo" selected value="Premium">Premium</option>
                     <option id="tipo-ingresso" class="formulario__ingresso__tipo" name="tipo" value="grupo">grupo</option>
                 </select>
                 <label for="numero-pessoas" class="numero__pessoas" id="label__quantidade">Quantidade</label>
                 <input type="number" name="quantidade" id="numero-pessoas" class="numero__de__ingressos" required>
                 <h3 class="erro__numero">Quantidade para grupo deve ser maior que 5</h3>
-                <button class="btn__submit" type="submit" id="submit__btn">Avançar<i class='bx bx-right-arrow-alt'></i></button>
+                <label for="setor_desejado">Escolha o seu setor</label>
+                <select id="setor_desejado" class="selecao__cadeiras">
+                    <option value="Cadeiras Térreo" class="selecao__tipo__cadeira">Cadeiras Térreo</option>
+                    <option value="Cadeiras Superiores" class="selecao__tipo__cadeira">Cadeiras superiores</option>
+                </select>
+                <button class="btn__submit" type="button" id="submit__btn">Avançar<i class='bx bx-right-arrow-alt'></i></button>
             </form>
         </section>
     </main>
@@ -140,5 +147,6 @@
     <!-- arquivos javaScript -->
 
     <script src="../Js/main.js"></script>
+    <script src="../Js/validarIngresso.js"></script>
 </body>
 </html>
