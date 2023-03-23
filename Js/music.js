@@ -27,6 +27,12 @@ const playPause = () => {
 };
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 0a102620a7fbefb69cbc6bbde42800cda3a7ac57
 const prevNextMusic = (type = "next") => {
   if((type == "next" && index + 1 === songs.length) || type === "init") {
     index = 0;
